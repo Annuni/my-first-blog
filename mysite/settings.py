@@ -25,7 +25,7 @@ SECRET_KEY = 'pvhzjd^kub2wi)%-h%6e)k+9*)^4#_tot-=$4b@5(69v3^e2h8'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['annuni.pythonanywhere.com']
 
 
 # Application definition
