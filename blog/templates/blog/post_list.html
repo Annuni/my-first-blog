@@ -10,26 +10,21 @@
                     </a>
                 </h1>
             </div>
-            <div>
-                <p>
-                    published: 07.07.2018, 16:15
-                </p>
-                <h2>
-                    <a href="">
-                        My first post
-                    </a>
-                </h2>
-
-            </div>
-
-            <p>
-                published: 07.07.2018, 16:30
-            </p>
-            <h2>
-                <a href="">
-                    My second post
-                </a>
-            </h2>
+            {% for post in posts %}
+             <div>
+                 <p>
+                     published: {{post.published_date}}
+                 </p>
+                 <h1>
+                     <a href="">
+                         {{ post.title}}
+                     </a>
+                 </h1>
+                 <p>
+                     {{post.text|linebreaksbr}}
+                 </p>
+                 </div>
+            {% endfor %}
                 
         </body>
 </html>
